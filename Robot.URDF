@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<URDF name="Robot">
+  <link name="Chassis">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="2.07180345206185" />
+      <inertia ixx="0.00356945572688469" ixy="-4.47652513889267E-21" ixz="1.20613262152867E-19" iyy="-4.47652513889267E-21" iyz="0.00884981333361377" izz="8.24673667801864E-20" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <Mesh filename="C:\Users\brad\Documents\Gazebo test cad\New folder\visualSTL\Chassis.stl" />
+      </geometry>
+      <color rgba="255 0 0 1" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <Mesh filename="C:\Users\brad\Documents\Gazebo test cad\New folder\collisionSTL\Chassis.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="FL Wheel">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.202708327012954" />
+      <inertia ixx="0.000143721006239312" ixy="-4.95496177213446E-40" ixz="2.60749908296803E-37" iyy="-4.95496177213446E-40" iyz="0.000143721006239312" izz="2.94447559556559E-37" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <Mesh filename="C:\Users\brad\Documents\Gazebo test cad\New folder\visualSTL\FL Wheel.stl" />
+      </geometry>
+      <color rgba="128 255 0 1" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <Mesh filename="C:\Users\brad\Documents\Gazebo test cad\New folder\collisionSTL\FL Wheel.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="FR Wheel">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.202708327012954" />
+      <inertia ixx="0.000143721006239312" ixy="4.95496177212916E-40" ixz="-2.60749908296803E-37" iyy="4.95496177212916E-40" iyz="0.000143721006239312" izz="-1.8627532974539E-36" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <Mesh filename="C:\Users\brad\Documents\Gazebo test cad\New folder\visualSTL\FR Wheel.stl" />
+      </geometry>
+      <color rgba="128 255 0 1" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <Mesh filename="C:\Users\brad\Documents\Gazebo test cad\New folder\collisionSTL\FR Wheel.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="RL Wheel">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.202708327012954" />
+      <inertia ixx="0.000143721006239312" ixy="-4.95496177213446E-40" ixz="2.60749908296803E-37" iyy="-4.95496177213446E-40" iyz="0.000143721006239312" izz="2.94447559556559E-37" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <Mesh filename="C:\Users\brad\Documents\Gazebo test cad\New folder\visualSTL\RL Wheel.stl" />
+      </geometry>
+      <color rgba="128 255 0 1" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <Mesh filename="C:\Users\brad\Documents\Gazebo test cad\New folder\collisionSTL\RL Wheel.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="RR Wheel">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.202708327012954" />
+      <inertia ixx="0.000143721006239312" ixy="4.95496177212916E-40" ixz="-2.60749908296803E-37" iyy="4.95496177212916E-40" iyz="0.000143721006239312" izz="-1.8627532974539E-36" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <Mesh filename="C:\Users\brad\Documents\Gazebo test cad\New folder\visualSTL\RR Wheel.stl" />
+      </geometry>
+      <color rgba="128 255 0 1" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <Mesh filename="C:\Users\brad\Documents\Gazebo test cad\New folder\collisionSTL\RR Wheel.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Chassis-FL Wheel" type="2">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="Chassis" />
+    <child link="FL Wheel" />
+    <axis xyz="0 0 0" />
+  </joint>
+  <joint name="Chassis-FR Wheel" type="2">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="Chassis" />
+    <child link="FR Wheel" />
+    <axis xyz="0 0 0" />
+  </joint>
+  <joint name="Chassis-RL Wheel" type="2">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="Chassis" />
+    <child link="RL Wheel" />
+    <axis xyz="0 0 0" />
+  </joint>
+  <joint name="Chassis-RR Wheel" type="2">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="Chassis" />
+    <child link="RR Wheel" />
+    <axis xyz="0 0 0" />
+  </joint>
+</URDF>
