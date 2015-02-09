@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<URDF name="Robot">
+<robot name="Robot">
   <link name="Chassis">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0.0754502137597999 0.0991092619435655 0.161107514233835" rpy="0 0 0" />
       <mass value="2.07180345206185" />
-      <inertia ixx="0.00356945572688469" ixy="-4.47652513889267E-21" ixz="1.20613262152867E-19" iyy="-4.47652513889267E-21" iyz="0.00884981333361377" izz="8.24673667801864E-20" />
+      <inertia ixx="0.00356945572688469" ixy="4.47652513889267E-21" ixz="1.20613262152867E-19" iyy="4.47652513889267E-21" iyz="0.00884981333361377" izz="8.24673667801864E-20" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://Robot/visualSTL/Chassis.stl" />
       </geometry>
-      <color rgba="255 0 0 1" />
+      <material name="0000FF">
+        <color rgba="255 0 0 1" />
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -22,19 +24,21 @@
   </link>
   <link name="FL Wheel">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 0 0.0976075142338346" rpy="0 0 0" />
       <mass value="0.202708327012954" />
-      <inertia ixx="0.000143721006239312" ixy="-4.95496177213446E-40" ixz="2.60749908296803E-37" iyy="-4.95496177213446E-40" iyz="0.000143721006239312" izz="3.67915956482952E-37" />
+      <inertia ixx="0.000143721006239312" ixy="4.95496177213446E-40" ixz="2.60749908296803E-37" iyy="4.95496177213446E-40" iyz="0.000143721006239312" izz="3.67915956482952E-37" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="-0.1516502137598 -0.0733936843274657 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://Robot/visualSTL/FL Wheel.stl" />
       </geometry>
-      <color rgba="128 255 0 1" />
+      <material name="00FF80">
+        <color rgba="128 255 0 1" />
+      </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="-0.1516502137598 -0.0733936843274657 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://Robot/collisionSTL/FL Wheel.stl" />
       </geometry>
@@ -42,19 +46,21 @@
   </link>
   <link name="FR Wheel">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 -2.77555756156289E-17 0.224607514233835" rpy="0 0 0" />
       <mass value="0.202708327012954" />
-      <inertia ixx="0.000143721006239312" ixy="4.95496177212916E-40" ixz="-2.60749908296803E-37" iyy="4.95496177212916E-40" iyz="0.000143721006239312" izz="-2.00969009130669E-36" />
+      <inertia ixx="0.000143721006239312" ixy="4.95496177212916E-40" ixz="2.60749908296803E-37" iyy="4.95496177212916E-40" iyz="0.000143721006239312" izz="1.8627532974539E-36" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="-0.1516502137598 -0.0733936843274657 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://Robot/visualSTL/FR Wheel.stl" />
       </geometry>
-      <color rgba="128 255 0 1" />
+      <material name="00FF80">
+        <color rgba="128 255 0 1" />
+      </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="-0.1516502137598 -0.0733936843274657 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://Robot/collisionSTL/FR Wheel.stl" />
       </geometry>
@@ -62,19 +68,21 @@
   </link>
   <link name="RL Wheel">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 0 0.0976075142338346" rpy="0 0 0" />
       <mass value="0.202708327012954" />
-      <inertia ixx="0.000143721006239312" ixy="-4.95496177213446E-40" ixz="2.60749908296803E-37" iyy="-4.95496177213446E-40" iyz="0.000143721006239312" izz="2.94447559556559E-37" />
+      <inertia ixx="0.000143721006239312" ixy="4.95496177213446E-40" ixz="2.60749908296803E-37" iyy="4.95496177213446E-40" iyz="0.000143721006239312" izz="2.94447559556559E-37" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0.00074978624020014 -0.0733936843274657 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://Robot/visualSTL/RL Wheel.stl" />
       </geometry>
-      <color rgba="128 255 0 1" />
+      <material name="00FF80">
+        <color rgba="128 255 0 1" />
+      </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0.00074978624020014 -0.0733936843274657 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://Robot/collisionSTL/RL Wheel.stl" />
       </geometry>
@@ -82,46 +90,48 @@
   </link>
   <link name="RR Wheel">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 0 0.224607514233835" rpy="0 0 0" />
       <mass value="0.202708327012954" />
-      <inertia ixx="0.000143721006239312" ixy="4.95496177212916E-40" ixz="-2.60749908296803E-37" iyy="4.95496177212916E-40" iyz="0.000143721006239312" izz="-2.00969009130669E-36" />
+      <inertia ixx="0.000143721006239312" ixy="4.95496177212916E-40" ixz="2.60749908296803E-37" iyy="4.95496177212916E-40" iyz="0.000143721006239312" izz="1.8627532974539E-36" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0.00074978624020014 -0.0733936843274657 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://Robot/visualSTL/RR Wheel.stl" />
       </geometry>
-      <color rgba="128 255 0 1" />
+      <material name="00FF80">
+        <color rgba="128 255 0 1" />
+      </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0.00074978624020014 -0.0733936843274657 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://Robot/collisionSTL/RR Wheel.stl" />
       </geometry>
     </collision>
   </link>
-  <joint name="Chassis-FL Wheel" type="2">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+  <joint name="Chassis-FL Wheel" type="Continuous">
+    <origin xyz="0.1516502137598 0.0733936843274657 0" rpy="0 0 0" />
     <parent link="Chassis" />
     <child link="FL Wheel" />
-    <axis xyz="0 0 0" />
+    <axis xyz="0 0 -1" />
   </joint>
-  <joint name="Chassis-FR Wheel" type="2">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+  <joint name="Chassis-FR Wheel" type="Continuous">
+    <origin xyz="0.1516502137598 0.0733936843274657 0" rpy="0 0 0" />
     <parent link="Chassis" />
     <child link="FR Wheel" />
-    <axis xyz="0 0 0" />
+    <axis xyz="0 0 -1" />
   </joint>
-  <joint name="Chassis-RL Wheel" type="2">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+  <joint name="Chassis-RL Wheel" type="Continuous">
+    <origin xyz="-0.00074978624020014 0.0733936843274657 0" rpy="0 0 0" />
     <parent link="Chassis" />
     <child link="RL Wheel" />
-    <axis xyz="0 0 0" />
+    <axis xyz="0 0 -1" />
   </joint>
-  <joint name="Chassis-RR Wheel" type="2">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+  <joint name="Chassis-RR Wheel" type="Continuous">
+    <origin xyz="-0.00074978624020014 0.0733936843274657 0" rpy="0 0 0" />
     <parent link="Chassis" />
     <child link="RR Wheel" />
-    <axis xyz="0 0 0" />
+    <axis xyz="0 0 -1" />
   </joint>
-</URDF>
+</robot>
